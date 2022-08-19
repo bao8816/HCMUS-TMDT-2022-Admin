@@ -11,7 +11,7 @@ const db = require('./config/db');
 db.connect();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 2000 || process.env.PORT;
 
 app.use(express.json());
 
