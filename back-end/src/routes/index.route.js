@@ -4,7 +4,7 @@ const homeRoute = require('./home.route');
 
 function routes(app) {
     app.use('/products', productRoute);
-    app.use('/signup', authRoute);
+    app.use('/', authRoute);
     app.use('/', homeRoute);
 }
 

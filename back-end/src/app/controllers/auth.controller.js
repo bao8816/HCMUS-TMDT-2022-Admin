@@ -1,43 +1,41 @@
-const Admin_account = require('../models/admin_account.model');
-const Admin_profile = require('../models/admin_profile.model');
 const bcrypt = require('bcryptjs');
-const passport = require('passport');
+const Admin_account = require('../models/admin_account.model');
 
 class AuthController {
     signUp(req, res) {
         const { email, password, name } = req.body;
-        Admin_account.findOne({ email })
-            .then(user => {
-                if (user) {
-                    return res.status(400).json({ message: 'Username already exists' });
-                } else {
-                    const newUser = new Admin_account({
-                        email,
-                        password
-                    });
-                    // Create new profile for new user
-                    const newProfile = new Admin_profile({
-                        email,
-                        name,
-                        gender: '',
-                        image: '',
-                    });
-                    newProfile.save();
-
-                    bcrypt.genSalt(10, (err, salt) => {
-                        bcrypt.hash(newUser.password, salt, (err, hash) => {
-                            if (err) throw err;
-                            newUser.password = hash;
-                            newUser.save()
-                                .then(user => {
-                                    res.redirect('/signin');
-                                }).catch(err => {
-                                    res.status(500).json({ message: err.message });
-                                });
+        bcrypt.genSalt(10, (err, salt) => {
+            bcrypt.hash(password, salt, (err, hash) => {
+                const newUser = new Admin_account({
+                    email: email,
+                    password: hash,
+                    name: name,
+                    image: 'https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png'
+                });
+                newUser.save()
+                    .then(user => {
+                        res.json(user);
+                    })
+                    .catch(err => {
+                        res.json({
+                            message: err.message
                         });
                     });
-                }
             });
+        });
+    }                           
+
+    signOut(req, res, next) {
+        req.logout(function(err) {
+            if (err) { return next(err); }
+            res.redirect('/');
+        });
+    }
+
+    signInFailed(req, res) {
+        res.json({
+            message: 'Incorrect email or password',
+        });
     }
 }
 
