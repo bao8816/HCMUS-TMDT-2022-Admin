@@ -39,6 +39,40 @@ class ProductController {
         };
     }
 
+    getProductByBrand(req, res) {
+        if (req.isAuthenticated()) {
+            Product.find({ brand: req.params.brand })
+                .then(product => {
+                    res.json(multipleMongooseToObject(product));
+                }).catch(err => {
+                    res.json({
+                        message: err.message
+                    });
+                })
+        } else {
+            res.json({
+                message: 'You are not authorized'
+            });
+        };
+    }
+
+    getProductByCategory(req, res) {
+        if (req.isAuthenticated()) {
+            Product.find({ category: req.params.category })
+                .then(product => {
+                    res.json(multipleMongooseToObject(product));
+                }).catch(err => {
+                    res.json({
+                        message: err.message
+                    });
+                })
+        } else {
+            res.json({
+                message: 'You are not authorized'
+            });
+        };
+    }
+
     createProduct(req, res) {
         if (req.isAuthenticated()) {
             const product = new Product(req.body);

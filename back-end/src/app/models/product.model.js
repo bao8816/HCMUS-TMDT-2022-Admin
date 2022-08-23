@@ -28,9 +28,9 @@ const Product = new Schema({
         type: String, 
         required: true 
     },
-    category: { 
-        type: String, 
-        required: false,
+    category: {
+        type: String,
+        required: true,
         ref: 'Category'
     },
     brand: { 

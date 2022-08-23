@@ -23,6 +23,9 @@ class OrderController {
     getOrderById(req, res) {
         if (req.isAuthenticated()) {
             Order.findById(req.params.id)
+                .populate({
+                    path: 'products.product_id',
+                })
                 .then(order => {
                     res.json(mongooseToObject(order));
                 }).catch(err => {
