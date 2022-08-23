@@ -12,7 +12,8 @@ const Admin_account = new Schema({
     },
     password: {
         type: String,
-        required: true
+        required: true,
+        hide: true,
     },
     name: {
         type: String,
@@ -23,6 +24,11 @@ const Admin_account = new Schema({
         type: String, 
         slug: 'email', 
         unique: true 
+    },
+    role: {
+        type: String,
+        required: true,
+        default: 'admin'
     },
     createdAt: {
         type: Date, 

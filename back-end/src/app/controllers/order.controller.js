@@ -1,15 +1,13 @@
-const Product = require('../models/product.model');
+const Order = require('../models/order.model');
 const { multipleMongooseToObject } = require('../../utils/mongoose');
 const { mongooseToObject } = require('../../utils/mongoose');
-const cloudinary = require('cloudinary');
 
-
-class ProductController {
-    getProducts(req, res) {
+class OrderController {
+    getOrders(req, res) {
         if (req.isAuthenticated()) {
-            Product.find({})
-                .then(products => {
-                    res.json(multipleMongooseToObject(products));
+            Order.find({})
+                .then(orders => {
+                    res.json(multipleMongooseToObject(orders));
                 }).catch(err => {
                     res.json({
                         message: err.message
@@ -21,12 +19,12 @@ class ProductController {
             });
         }
     }
-
-    getProductById(req, res) {
+    
+    getOrderById(req, res) {
         if (req.isAuthenticated()) {
-            Product.findById(req.params.id)
-                .then(product => {
-                    res.json(mongooseToObject(product));
+            Order.findById(req.params.id)
+                .then(order => {
+                    res.json(mongooseToObject(order));
                 }).catch(err => {
                     res.json({
                         message: err.message
@@ -39,12 +37,12 @@ class ProductController {
         };
     }
 
-    createProduct(req, res) {
+    createOrder(req, res) {
         if (req.isAuthenticated()) {
-            const product = new Product(req.body);
-            product.save()
-                .then(product => {
-                    res.json(mongooseToObject(product));
+            const order = new Order(req.body);
+            order.save()
+                .then(order => {
+                    res.json(mongooseToObject(order));
                 }).catch(err => {
                     res.status(500).json({ message: err.message });
                 });
@@ -55,14 +53,16 @@ class ProductController {
         };
     }
 
-    updateProduct(req, res) {
+    updateOrder(req, res) {
         if (req.isAuthenticated()) {
-            Product.findByIdAndUpdate(req.params.id, req.body, { new: true })
-            .then(product => {
-                res.json(mongooseToObject(product));
-            }).catch(err => {
-                res.status(500).json({ message: err.message });
-            });
+            Order.findByIdAndUpdate(req.params.id, req.body, { new: true })
+                .then(order => {
+                    res.json(mongooseToObject(order));
+                }).catch(err => {
+                    res.json({
+                        message: err.message
+                    });
+                })
         } else {
             res.json({
                 message: 'You are not authorized'
@@ -70,16 +70,18 @@ class ProductController {
         };
     }
 
-    deleteProduct(req, res) {
+    deleteOrder(req, res) {
         if (req.isAuthenticated()) {
-            Product.deleteOne({ _id: req.params.id })
+            Order.findByIdAndDelete(req.params.id)
                 .then(() => {
                     res.json({
-                        message: 'Product deleted successfully'
-                    });
-                }).catch(err => {
-                    res.status(500).json({ message: err.message });
+                        message: 'Order deleted successfully'
                 });
+                }).catch(err => {
+                    res.json({
+                        message: err.message
+                    });
+                })
         } else {
             res.json({
                 message: 'You are not authorized'
@@ -88,4 +90,4 @@ class ProductController {
     }
 }
 
-module.exports = new ProductController();
+module.exports = new OrderController();
