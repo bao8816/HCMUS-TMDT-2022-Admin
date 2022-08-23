@@ -38,6 +38,11 @@ router.post('/signin/password', passport.authenticate('local', {
 }));
 
 router.post('/signup', authController.signUp);
+router.get('/signin', function(req, res) {
+    res.json({
+        message: 'This is sign in page',
+        });
+      });
 router.get('/signin-failed', authController.signInFailed);
 router.get('/signout', authController.signOut);
 

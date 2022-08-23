@@ -2,6 +2,7 @@ const express = require('express');
 const passport = require('passport');
 const session = require('express-session');
 const config = require('./config/env_config');
+const cloudinary = require('cloudinary');
 
 const routes = require('./routes/index.route');
 
@@ -25,6 +26,13 @@ app.use(passport.authenticate('session'));
 app.use(function (req, res, next) {
     res.locals.user = req.user;
     next();
+});
+
+// Cloudinary config
+cloudinary.config({
+    cloud_name: config.CDN_CLOUD_NAME,
+    api_key: config.CDN_API_KEY,
+    api_secret: config.CDN_API_SECRET
 });
 
 // Route
