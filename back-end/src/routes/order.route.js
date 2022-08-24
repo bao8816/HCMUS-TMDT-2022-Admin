@@ -11,6 +11,8 @@ router.post('/', orderController.createOrder);
 
 //UPDATE
 router.put('/:id', orderController.updateOrder);
+//cancel order
+router.put('/:id/cancel', orderController.cancelOrder);
 
 //DELETE
 router.delete('/:id', orderController.deleteOrder);

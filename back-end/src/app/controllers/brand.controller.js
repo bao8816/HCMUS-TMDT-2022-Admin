@@ -38,7 +38,7 @@ class BrandController {
     }
 
     createBrand(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             const brand = new Brand(req.body);
             brand.save()
                 .then(brand => {
@@ -54,7 +54,7 @@ class BrandController {
     }
 
     updateBrand(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             Brand.findByIdAndUpdate(req.params.id, req.body, { new: true })
                 .then(brand => {
                     res.json(mongooseToObject(brand));
@@ -71,7 +71,7 @@ class BrandController {
     }
 
     deleteBrand(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             Brand.findByIdAndDelete(req.params.id)
                 .then(brand => {
                     res.json({

@@ -38,7 +38,7 @@ class CategoryController {
     }
     
     createCategory(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             const category = new Category(req.body);
             category.save()
                 .then(category => {
@@ -54,7 +54,7 @@ class CategoryController {
     }
     
     updateCategory(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             Category.findByIdAndUpdate(req.params.id, req.body, { new: true })
                 .then(category => {
                     res.json(mongooseToObject(category));
@@ -71,7 +71,7 @@ class CategoryController {
     }
 
     deleteCategory(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             Category.findByIdAndRemove(req.params.id)
                 .then(() => {
                     res.json({

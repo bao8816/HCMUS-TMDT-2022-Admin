@@ -6,7 +6,7 @@ const cloudinary = require('cloudinary');
 
 class ProductController {
     getProducts(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             Product.find({})
                 .then(products => {
                     res.json(multipleMongooseToObject(products));
@@ -23,7 +23,7 @@ class ProductController {
     }
 
     getProductById(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             Product.findById(req.params.id)
                 .then(product => {
                     res.json(mongooseToObject(product));
@@ -40,7 +40,7 @@ class ProductController {
     }
 
     getProductByBrand(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             Product.find({ brand: req.params.brand })
                 .then(product => {
                     res.json(multipleMongooseToObject(product));
@@ -57,7 +57,7 @@ class ProductController {
     }
 
     getProductByCategory(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             Product.find({ category: req.params.category })
                 .then(product => {
                     res.json(multipleMongooseToObject(product));
@@ -74,7 +74,7 @@ class ProductController {
     }
 
     createProduct(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             const product = new Product(req.body);
             product.save()
                 .then(product => {
@@ -90,7 +90,7 @@ class ProductController {
     }
 
     updateProduct(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             Product.findByIdAndUpdate(req.params.id, req.body, { new: true })
             .then(product => {
                 res.json(mongooseToObject(product));
@@ -105,7 +105,7 @@ class ProductController {
     }
 
     deleteProduct(req, res) {
-        if (req.isAuthenticated()) {
+        if (req.isAuthenticated() && req.user.role === 'admin') {
             Product.deleteOne({ _id: req.params.id })
                 .then(() => {
                     res.json({
