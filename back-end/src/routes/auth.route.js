@@ -22,7 +22,7 @@ passport.use(new LocalStrategy(function verify(username, password, done) {
 
 passport.serializeUser(function(user, cb) {
     process.nextTick(function() {
-      cb(null, { id: user.id, email: user.email });
+      cb(null, { id: user.id, email: user.email, role: user.role });
     });
   });
   
@@ -38,11 +38,6 @@ router.post('/signin/password', passport.authenticate('local', {
 }));
 
 router.post('/signup', authController.signUp);
-router.get('/signin', function(req, res) {
-    res.json({
-        message: 'This is sign in page',
-        });
-      });
 router.get('/signin-failed', authController.signInFailed);
 router.get('/signout', authController.signOut);
 
