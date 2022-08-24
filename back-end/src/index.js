@@ -3,6 +3,8 @@ const passport = require('passport');
 const session = require('express-session');
 const config = require('./config/env_config');
 const cloudinary = require('cloudinary');
+const handlebars = require('express-handlebars');
+var path = require('path');
 
 const routes = require('./routes/index.route');
 
@@ -14,6 +16,11 @@ const PORT = 2000 || config.PORT;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Handlebars Middleware
+app.set('views', path.join(__dirname, 'views'));
+app.engine('handlebars', handlebars.engine());
+app.set('view engine', 'handlebars');
 
 // Passport config
 app.use(session({
