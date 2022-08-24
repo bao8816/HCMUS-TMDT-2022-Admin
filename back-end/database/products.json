@@ -1,0 +1,573 @@
+[{
+  "_id": {
+    "$oid": "630334b9c4804986c90c0a75"
+  },
+  "name": "CPU AMD Ryzen 5 PRO 4650G",
+  "price": 162,
+  "description": "Dòng Ryzen 4000 là một dòng CPU đa nhân mạnh mẽ \nđể phục vụ công việc và chiến tất cả các tựa game. \nSử dụng kiến trúc Zen 2 mới cải thiện hiệu năng của từng nhân. \nTiến trình sản xuất 7 nm để tối ưu điện năng tiêu thụ và hiệu năng.",
+  "image": "https://drive.google.com/file/d/1qf9L3J-PJ6ubJJ3JTpe-c_B2KR9W4J0i/view?usp=sharing",
+  "category": "CPU",
+  "brand": "AMD",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661154489586"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661154489586"
+    }
+  },
+  "slug": "cpu-amd-ryzen-5-pro-4650g",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63045b2d30f4040192eecd59"
+  },
+  "name": "CPU AMD Ryzen 7 5700X",
+  "price": 268,
+  "description": "Dòng Ryzen 5000 là một dòng CPU đơn nhân lẫn đa nhân mạnh mẽ \nđể phục vụ công việc và chiến tất cả các tựa game. \nSử dụng kiến trúc Zen 3 mới cải thiện hiệu năng của từng nhân. \nTiến trình sản xuất 7 nm để tối ưu điện năng tiêu thụ và hiệu năng.",
+  "image": "https://drive.google.com/file/d/1qh3zTe-TRrQ28MAfHnn_YDu9MsA3iHQc/view?usp=sharing",
+  "category": "CPU",
+  "brand": "AMD",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661229869771"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661229869771"
+    }
+  },
+  "slug": "cpu-amd-ryzen-7-5700x",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048aae30f4040192eecd5c"
+  },
+  "name": "CPU Intel core I5-12400",
+  "price": 213,
+  "description": "Intel đã ra mắt dòng vi xử lý Core thế hệ thứ 12 và chipset Intel 600-series. \nĐược đóng gói chuẩn LGA1700 mới,với tên mã “Alder Lake”. \nViệc sử dụng CPU này yêu cầu một bo mạch chủ Socket mới LGA1700.",
+  "image": "https://drive.google.com/file/d/1qh4dtF-TPVV4Npf1jWZRmT8EL7vj-41h/view?usp=sharing",
+  "category": "CPU",
+  "brand": "Intel",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661242030147"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661242030147"
+    }
+  },
+  "slug": "cpu-intel-core-i5-12400",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048af530f4040192eecd5f"
+  },
+  "name": "CPU Intel Core I7-12700",
+  "price": 375,
+  "description": "Intel đã ra mắt dòng vi xử lý Core thế hệ thứ 12 và chipset Intel 600-series.\n Được đóng gói chuẩn LGA1700 mới,với tên mã “Alder Lake”. \nViệc sử dụng CPU này yêu cầu một bo mạch chủ Socket mới LGA1700.",
+  "image": "https://drive.google.com/file/d/1qlmRJ4IQQ6YoSLfq4QClqBIhIb1pPoGl/view?usp=sharing",
+  "category": "CPU",
+  "brand": "Intel",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661242101734"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661242101734"
+    }
+  },
+  "slug": "cpu-intel-core-i7-12700",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048b6830f4040192eecd62"
+  },
+  "name": "Mainboard Asus Prime H610M-K D4 Socket Intel LGA 1700",
+  "price": 98,
+  "description": "Intel® Socket LGA1700 for 12th Gen Intel® Core™, Pentium® Gold and Celeron® Processors. \nSupports Intel® Turbo Boost Technology 2.0 and Intel® Turbo Boost Max Technology 3.0.",
+  "image": "https://drive.google.com/file/d/1qo9Hn5yfGzYESdM7V-5FSKPH2IVRk3s1/view?usp=sharing",
+  "category": "Main",
+  "brand": "Asus",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661242216202"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661242216203"
+    }
+  },
+  "slug": "mainboard-asus-prime-h610m-k-d4-socket-intel-lga-1700",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048c2e30f4040192eecd65"
+  },
+  "name": "Mainboard Asus TUF-GAMING-B550M-PLUS Socket AMD AM4",
+  "price": 145,
+  "description": "AMD AM4 Socket for AMD Ryzen™ 5000 Series/ 5000 G-Series/ 4000 G-Series/ 3000 Series Desktop Processors *",
+  "image": "https://drive.google.com/file/d/1qz54Ew45w40ePhLd9KNfJ8BISV3zXX8n/view?usp=sharing",
+  "category": "Main",
+  "brand": "Asus",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661242414842"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661242414842"
+    }
+  },
+  "slug": "mainboard-asus-tuf-gaming-b550m-plus-socket-amd-am4",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048d8c30f4040192eecd69"
+  },
+  "name": "Mainboard Gigabyte GB-H610M H DDR4 Socket Intel LGA 1700",
+  "price": 85,
+  "description": "LGA1700 socket: Support for 12th Generation Intel® Core™, \nPentium® Gold and Celeron® Processors* L3 cache varies with CPU",
+  "image": "https://drive.google.com/file/d/1r-W8zRYIXUXEkqdnvYDu7beAJd-EdIXB/view?usp=sharing",
+  "category": "Main",
+  "brand": "Gigabyte",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661242764655"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661242764655"
+    }
+  },
+  "slug": "mainboard-gigabyte-gb-h610m-h-ddr4-socket-intel-lga-1700",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048dc830f4040192eecd6c"
+  },
+  "name": "Mainboard Gigabyte B550M DS3H Socket AMD AM4",
+  "price": 98,
+  "description": "AMD Socket AM4, support for: AMD Ryzen™ 5000 Series/ Ryzen™ 5000 G-Series/ \nRyzen™ 4000 G-Series and Ryzen™ 3000 Series Processors(Please refer “CPU Support List” for more information.)",
+  "image": "https://drive.google.com/file/d/1r2ZjyxVSdMtGy7XmIZw1l8CrJOzZkmn1/view?usp=sharing",
+  "category": "Main",
+  "brand": "Gigabyte",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661242824003"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661242824003"
+    }
+  },
+  "slug": "mainboard-gigabyte-b550m-ds3h-socket-amd-am4",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048e4630f4040192eecd6f"
+  },
+  "name": "Mainboard MSI PRO B660M-A DDR4 - mATX Intel LGA 1700",
+  "price": 140,
+  "description": "Supports 12th Gen Intel® Core™ Processors\nProcessor socket LGA1700",
+  "image": "https://drive.google.com/file/d/1r9rx860ixQnRyzEyARzoniSEx6rlfOOv/view?usp=sharing",
+  "category": "Main",
+  "brand": "MSI",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661242950323"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661242950323"
+    }
+  },
+  "slug": "mainboard-msi-pro-b660m-a-ddr4-matx-intel-lga-1700",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048e7c30f4040192eecd72"
+  },
+  "name": "MSI MAG B550M MORTAR",
+  "price": 175,
+  "description": "Mainboard MSI MAG B550M MORTAR vẫn sử dụng socket AM4, \nhỗ trợ các CPU AMD Ryzen 3000 Series trở lên (Trừ Ryzen 5 3500g và Ryzen 3 3200g). \nCùng với đó là hàng loạt công nghệ độc quyền của MSI. ",
+  "image": "https://drive.google.com/file/d/1rCHuvBdcIJW9rA4_7ijy_KOpwy0xcSf5/view?usp=sharing",
+  "category": "Main",
+  "brand": "MSI",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243004794"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243004794"
+    }
+  },
+  "slug": "msi-mag-b550m-mortar",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048ee730f4040192eecd75"
+  },
+  "name": "Ram Corsair 16GB (2x 8GB) DDR4 3200MHz Vengeance RGB RS (CMG16GX4M2E3200C16)",
+  "price": 76,
+  "description": "Với đa dạng tùy chọn tốc độ bus và độ trễ khác nhau, Ram Desktop Corsair Vengeance RS RGB \nchắc chắn là một lựa chọn cân bằng giữa hiệu năng và số tiền mà người dùng phải bỏ ra để sở hữu.",
+  "image": "https://drive.google.com/file/d/1rj751MuuRCe4bgEwdNWeuLZliLtbpeA3/view?usp=sharing",
+  "category": "Ram",
+  "brand": "Corsair",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243111501"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243111501"
+    }
+  },
+  "slug": "ram-corsair-16gb-2x-8gb-ddr4-3200mhz-vengeance-rgb-rs-cmg16gx4m2e3200c16",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048f2030f4040192eecd78"
+  },
+  "name": "Ram Corsair 32GB (2x 16GB) DDR4 3200MHz Vengeance RGB RS (CMG32GX4M2E3200C16)",
+  "price": 132,
+  "description": "Với đa dạng tùy chọn tốc độ bus và độ trễ khác nhau, \nRam Desktop Corsair Vengeance RS RGB chắc chắn là một lựa chọn cân bằng giữa hiệu năng và số tiền mà người dùng phải bỏ ra để sở hữu.",
+  "image": "https://drive.google.com/file/d/1rSpOd80XdRH6y8VEwZ6s3AGxbPS4oRy2/view?usp=sharing",
+  "category": "Ram",
+  "brand": "Corsair",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243168687"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243168687"
+    }
+  },
+  "slug": "ram-corsair-32gb-2x-16gb-ddr4-3200mhz-vengeance-rgb-rs-cmg32gx4m2e3200c16",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048f8630f4040192eecd7b"
+  },
+  "name": "Ram Kingston Fury Beast RGB 16GB (2x 8GB) DDR4 3200Mhz (KF432C16BBAK2/16)",
+  "price": 76,
+  "description": "Kingston FURY Beast DDR4 RGB giúp nâng cao hiệu năng và cải tiến phong cách với tốc độ lên đến 3733MHz, \nphong cách mạnh mẽ và ánh sáng RGB chạy suốt chiều dài mô-đun nhằm đem lại hiệu ứng mượt mà và ấn tượng. \nBản nâng cấp ấn tượng và tiết kiệm chi phí này có tốc độ từ 2666MHz-3733MHz, độ trễ từ CL15–19, dung lượng của mô-đun đơn từ 8GB-32GB\n và dung lượng kit từ 16GB-128GB. Sản phẩm có khả năng ép xung tự động Cắm và Chạy ở tốc độ 2666MHz và đều tương thích với cả Intel XMP và AMD Ryzen™.\n FURY Beast DDR4 RGB luôn mát nhờ bộ tản nhiệt đơn giản, phong cách. 100% được thử nghiệm tốc độ và được hỗ trợ bảo hành trọn đời, \nđây là một bản nâng cấp dễ dàng, đơn giản cho hệ thống Intel hoặc AMD của bạn.",
+  "image": "https://drive.google.com/file/d/1rng6TC8IDW4I8awmZg3VJkDOzUkEoBCU/view?usp=sharing",
+  "category": "Ram",
+  "brand": "Kingston",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243270304"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243270304"
+    }
+  },
+  "slug": "ram-kingston-fury-beast-rgb-16gb-2x-8gb-ddr4-3200mhz-kf432c16bbak2-16",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63048fc930f4040192eecd7e"
+  },
+  "name": "Ram Kingston Fury Beast RGB 16GB (2x 8GB) DDR4 3600Mhz (KF436C17BBAK2/16)",
+  "price": 83,
+  "description": "Ánh sáng RGB ấn tượng với phong cách mạnh mẽ\nTương thích với Intel XMP\nCông nghệ HyperX Infrared Sync Kingston FURY™\nTốc độ lên đến 3733MHz và dung lượng kit lên đến 128GB",
+  "image": "https://drive.google.com/file/d/1roo3_Y_FOtUA7raxzoCZHarwkaPtc1Ip/view?usp=sharing",
+  "category": "Ram",
+  "brand": "Kingston",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243337878"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243337878"
+    }
+  },
+  "slug": "ram-kingston-fury-beast-rgb-16gb-2x-8gb-ddr4-3600mhz-kf436c17bbak2-16",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6304906130f4040192eecd81"
+  },
+  "name": "RAM Gigabyte Aorus RGB 16GB (2 x 8GB) 3333 Mhz DDR4 (GP-ARS16G33)",
+  "price": 110,
+  "description": "RAM AORUS RGB sử dụng bo mạch 10 lớp, đảm bảo sự ổn định cũng như hiệu năng của các chip ICs nhớ.\nBộ tản nhiệt của RAM AORUS RGB được thiết kế đặc biệt nhằm tăng hiệu quả giải nhiệt.",
+  "image": "https://drive.google.com/file/d/1rq0mQWrpxbjL9gN8T-nY2iF4e2Egpl76/view?usp=sharing",
+  "category": "Ram",
+  "brand": "Gigabyte",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243489107"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243489107"
+    }
+  },
+  "slug": "ram-gigabyte-aorus-rgb-16gb-2-x-8gb-3333-mhz-ddr4-gp-ars16g33",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630490a430f4040192eecd84"
+  },
+  "name": "RAM PC Gigabyte AORUS DDR5 32GB (2x16GB) 5200MHz (GP-ARS32G52D5)",
+  "price": 277,
+  "description": "AORUS DDR5 mang đến một bộ nhớ RAM tốc độ cao lên đến 5200 Mhz, đi kèm với việc hỗ trợ Intel XMP 3.0. \nBằng việc sử dụng tản nhiệt kết hợp nhôm-đồng , việc ép xung là dễ khi nhiệt độ không còn là vấn đề.",
+  "image": "https://drive.google.com/file/d/1rqRZ2N-Fr56RmWhC5dWZaA8ynhQ1pitB/view?usp=sharing",
+  "category": "Ram",
+  "brand": "Gigabyte",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243556998"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243556998"
+    }
+  },
+  "slug": "ram-pc-gigabyte-aorus-ddr5-32gb-2x16gb-5200mhz-gp-ars32g52d5",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630490f230f4040192eecd87"
+  },
+  "name": "Card Màn Hình ASUS Dual GeForce RTX 3060 OC V2 12GB LHR (DUAL-RTX3060-O12G-V2)",
+  "price": 392,
+  "description": "Là nền tảng cho GPU nhanh nhất, hiệu quả nhất trên thế giới, \nAmpere SM hoàn toàn mới mang lại thông lượng FP32 gấp 2 lần và cải thiện hiệu suất điện năng.",
+  "image": "https://drive.google.com/file/d/1rw4OLFvH3DyupoJs4yGqOQLmEPKDuRIa/view?usp=sharing",
+  "category": "VGA",
+  "brand": "Asus",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243634560"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243634560"
+    }
+  },
+  "slug": "card-man-hinh-asus-dual-geforce-rtx-3060-oc-v2-12gb-lhr-dual-rtx3060-o12g-v2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6304912130f4040192eecd8a"
+  },
+  "name": "Card Màn Hình ASUS TUF Gaming GeForce RTX 3070Ti 8GB (TUF-RTX3070TI-8G-GAMING)",
+  "price": 610,
+  "description": "Trải nghiệm khả năng tính toán nhanh gấp 2 lần nhân RT thế hệ thứ nhất, \nviệc tăng số nhân RT và khả năng đổ bóng đã giúp nâng hiệu suất ray tracing lên một tầm cao mới.",
+  "image": "https://drive.google.com/file/d/1rxTRg4T_rWZ8p3VNT3TGFROc0oEt4_Pi/view?usp=sharing",
+  "category": "VGA",
+  "brand": "Asus",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243681556"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243681556"
+    }
+  },
+  "slug": "card-man-hinh-asus-tuf-gaming-geforce-rtx-3070ti-8gb-tuf-rtx3070ti-8g-gaming",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630491d830f4040192eecd8d"
+  },
+  "name": "Card Màn Hình Gigabyte GeForce RTX 3080 Gaming OC 10G (GV-N3080GAMING OC-10GD)",
+  "price": 1002,
+  "description": "Giải pháp tản nhiệt WINDFORCE 3X tích hợp 2x 90mm và 1X80mm quạt với thiết kế cánh quạt độc quyền, \nvới chế độ fan giữa quay ngược chiều độc đáo, 7 ống đồng dẫn nhiệt , mặt tiếp xúc của heatsink bằng đồng lớn, \nfan quay thông minh, tất cả tạo nên giải pháp tản nhiệt cực kì hiệu quả.",
+  "image": "https://drive.google.com/file/d/1s10e8WJKs54Vbp8SLeeludbc6WAra11l/view?usp=sharing",
+  "category": "VGA",
+  "brand": "Gigabyte",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243864193"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243864193"
+    }
+  },
+  "slug": "card-man-hinh-gigabyte-geforce-rtx-3080-gaming-oc-10g-gv-n3080gaming-oc-10gd",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630491fb30f4040192eecd90"
+  },
+  "name": "Card Màn Hình Gigabyte GeForce RTX 3080 Aorus Master 12G (GV-N3080AORUS M-12GD)",
+  "price": 1280,
+  "description": "Tiếp xúc trực tiếp với GPU và VRAM – mặt đế Heasink với tiết diện lớn, làm bằng đồng và kết hợp nhuần nhuyễn\n với các ống đồng đem lại hiệu quả dẫn nhiệt cực lớn đến các lá nhôm tản nhiệt của Heatsink.",
+  "image": "https://drive.google.com/file/d/1sBugScUkKMmTcRDnvMSnweONUS7YRlhl/view?usp=sharing",
+  "category": "VGA",
+  "brand": "Gigabyte",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661243899222"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661243899222"
+    }
+  },
+  "slug": "card-man-hinh-gigabyte-geforce-rtx-3080-aorus-master-12g-gv-n3080aorus-m-12gd",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6304951e9914c59d58e0f424"
+  },
+  "name": "Ổ cứng SSD Kingston SSD NV1 250GB NVMe PCIe Gen3 X4 M.2 2280 (SNVS/250G)",
+  "price": 32,
+  "description": "Là giải pháp lưu trữ có dung lượng lớn, với tốc độ đọc/ghi lên tới 2.100/1.100MB/giây, nhanh gấp 3-4 lần ổ SSD SATA\n và nhanh gấp 35 lần so với một ổ cứng truyền thống. Ổ NV1 tiêu tốn ít năng lượng hơn, tỏa ra nhiệt thấp hơn và có thời gian tải nhanh hơn. \nNhờ hiệu năng hữu ích cùng thiết kế một mặt M.2 2280 (22x80mm), ổ NV1 trở thành phụ kiện lý tưởng cho các mẫu máy tính xách tay và hệ thống có kích thước mỏng với dung lượng hạn chế",
+  "image": "https://drive.google.com/file/d/1sXjk_GL0Kybocs-J7Nml1P0kO-BVoOrp/view?usp=sharing",
+  "category": "SSD",
+  "brand": "Kingston",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661244702755"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661244702755"
+    }
+  },
+  "slug": "o-cung-ssd-kingston-ssd-nv1-250gb-nvme-pcie-gen3-x4-m-2-2280-snvs-250g",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630495479914c59d58e0f427"
+  },
+  "name": "SSD Lexar NS100 2.5-Inch SATA III 128GB LNS100-128RB",
+  "price": 20,
+  "description": "Tăng tốc tối đa chiếc máy của bạn với ổ SSD đến từ Lexar. \nVới việc nâng cấp rất dễ dàng, khởi động nhanh hơn, thời gian khởi động nhanh hơn, \ntruyền tải dữ liệu nhanh và mượt mà hơn. Với tốc độ tối đa lên đến 550MB/s, việc truyền tải dữ liệu giờ đây dễ dàng hơn bao giờ hết.\n Ngoài ra nó còn mát hơn, êm ái hơn, và tiêu thụ điện năng thấp hơn so với ổ cứng truyền thống.",
+  "image": "https://drive.google.com/file/d/1sZXCSqd9rwLbDzFDNuutf9I1jDtynBav/view?usp=sharing",
+  "category": "SSD",
+  "brand": "Lexar",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661244743464"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661244743464"
+    }
+  },
+  "slug": "ssd-lexar-ns100-2-5-inch-sata-iii-128gb-lns100-128rb",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630496759914c59d58e0f42a"
+  },
+  "name": "Nguồn Corsair CV450 450W 80Plus Bronze (CP-9020209-NA)",
+  "price": 38,
+  "description": "Kháng nhiệt độ cao\nChịu quá tải\nHiệu suất hoạt động đạt chuẩn 80 PLUS Bronze\nBền bỉ, tin cậy và an toàn",
+  "image": "https://drive.google.com/file/d/1sbwOxO_5iRC1UE0dQZskh414QCAohllC/view?usp=sharing",
+  "category": "PSU",
+  "brand": "Corsair",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661245045337"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661245045337"
+    }
+  },
+  "slug": "nguon-corsair-cv450-450w-80plus-bronze-cp-9020209-na",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630496ac9914c59d58e0f42d"
+  },
+  "name": "Nguồn Corsair RM850x 850W Black 80Plus Gold Full Modular (CP-9020200-NA)",
+  "price": 150,
+  "description": "Dòng CORSAIR RM có độ ồn cực thấp với nhiều đầu nối EPS12V cung cấp nguồn điện hiệu quả nhất . \nChuẩn 80 PLUS Gold cho PC của bạn và có tất cả các kết nối cần thiết. \nCung cấp năng lượng cho các bản nâng cấp PC khắt khe nhất hiện nay.",
+  "image": "https://drive.google.com/file/d/1sdfuZk5Xn-Vf3Q0HpHF3eLenqmsG1tou/view?usp=sharing",
+  "category": "PSU",
+  "brand": "Corsair",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661245100237"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661245100237"
+    }
+  },
+  "slug": "nguon-corsair-rm850x-850w-black-80plus-gold-full-modular-cp-9020200-na",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630496f29914c59d58e0f430"
+  },
+  "name": "Nguồn Gigabyte P550B 550W 80Plus Bronze",
+  "price": 42,
+  "description": "Nguồn Gigabyte P550B được chứng nhận 80 Plus Bronze đảm bảo mang lại hiệu suất 85% khi tải 50%. \nHiệu suất điện năng tốt hơn dẫn đến ít lãng phí điện năng hơn, ít nóng hơn và ít tiếng ồn của quạt hơn.",
+  "image": "https://drive.google.com/file/d/1seWz3KbSTcH59OySHdKMqbmsLLw1v7j-/view?usp=sharing",
+  "category": "PSU",
+  "brand": "Gigabyte",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661245170922"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661245170922"
+    }
+  },
+  "slug": "nguon-gigabyte-p550b-550w-80plus-bronze",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6304971d9914c59d58e0f433"
+  },
+  "name": "Nguồn Gigabyte P750GM 750W 80Plus Gold Full-Modular",
+  "price": 85,
+  "description": "P750GM cung cấp giải pháp tốt nhất cho việc xây dựng hệ thống. Cáp bọc dẹp được gắn rời giúp nâng tầm bộ máy của bạn",
+  "image": "https://drive.google.com/file/d/1sfg6wIF9_BxsidkQwWKYK5UTFnofOi9D/view?usp=sharing",
+  "category": "PSU",
+  "brand": "Gigabyte",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661245213869"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661245213869"
+    }
+  },
+  "slug": "nguon-gigabyte-p750gm-750w-80plus-gold-full-modular",
+  "__v": 0
+}]

@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "6305e96f842846651a1d96f7"
+  },
+  "email": "admin1@gmail.com",
+  "password": "$2a$10$CB/zCiozwO7gpII6w8TMg.9MDL6IZYMzISdoKY1EP42fYo1R6Bysi",
+  "name": "admin 1",
+  "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+  "role": "admin",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661331823308"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661331823308"
+    }
+  },
+  "slug": "admin1-gmail-com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6305e977842846651a1d96fa"
+  },
+  "email": "admin2@gmail.com",
+  "password": "$2a$10$yvV73ZDsG4rFtK5aBF6SIuqqO5IJIDW58Kue7Ep60FbHfmqLfZ4Cy",
+  "name": "admin 2",
+  "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+  "role": "admin",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661331831165"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661331831165"
+    }
+  },
+  "slug": "admin2-gmail-com",
+  "__v": 0
+}]
