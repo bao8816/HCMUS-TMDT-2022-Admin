@@ -1,9 +1,8 @@
 const express = require('express');
-const path = require('path');
-const methodOverride = require('method-override');
 const passport = require('passport');
 const session = require('express-session');
-const process = require('process');
+const config = require('./config/env_config');
+const cloudinary = require('cloudinary');
 
 const routes = require('./routes/index.route');
 
@@ -11,9 +10,10 @@ const db = require('./config/db');
 db.connect();
 
 const app = express();
-const PORT = 2000 || process.env.PORT;
+const PORT = 2000 || config.PORT;
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Passport config
 app.use(session({
@@ -26,6 +26,13 @@ app.use(passport.authenticate('session'));
 app.use(function (req, res, next) {
     res.locals.user = req.user;
     next();
+});
+
+// Cloudinary config
+cloudinary.config({
+    cloud_name: config.CDN_CLOUD_NAME,
+    api_key: config.CDN_API_KEY,
+    api_secret: config.CDN_API_SECRET
 });
 
 // Route
