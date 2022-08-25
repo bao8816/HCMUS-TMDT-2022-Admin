@@ -1,7 +1,6 @@
 const Product = require('../models/product.model');
 const { multipleMongooseToObject } = require('../../utils/mongoose');
 const { mongooseToObject } = require('../../utils/mongoose');
-const cloudinary = require('cloudinary');
 
 
 class ProductController {

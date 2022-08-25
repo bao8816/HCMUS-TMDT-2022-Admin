@@ -2,7 +2,7 @@ const express = require('express');
 const passport = require('passport');
 const session = require('express-session');
 const config = require('./config/env_config');
-const cloudinary = require('cloudinary');
+// const cloudinary = require('cloudinary');
 const handlebars = require('express-handlebars');
 var path = require('path');
 
@@ -36,11 +36,11 @@ app.use(function (req, res, next) {
 });
 
 // Cloudinary config
-cloudinary.config({
-    cloud_name: config.CDN_CLOUD_NAME,
-    api_key: config.CDN_API_KEY,
-    api_secret: config.CDN_API_SECRET
-});
+// cloudinary.config({
+//     cloud_name: config.CDN_CLOUD_NAME,
+//     api_key: config.CDN_API_KEY,
+//     api_secret: config.CDN_API_SECRET
+// });
 
 // Route
 routes(app);
