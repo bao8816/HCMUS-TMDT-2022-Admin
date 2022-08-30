@@ -2,6 +2,7 @@ const express = require('express');
 const passport = require('passport');
 const session = require('express-session');
 const config = require('./config/env_config');
+const cors = require('cors');
 // const cloudinary = require('cloudinary');
 const handlebars = require('express-handlebars');
 var path = require('path');
@@ -16,6 +17,14 @@ const PORT = config.PORT || 2000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Config cors
+app.use(cors());
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 // Handlebars Middleware
 app.set('views', path.join(__dirname, 'views'));
